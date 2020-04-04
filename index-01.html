@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio: HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Thanks DEVICON! http://konpa.github.io/devicon/ (svg option available, too) -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> 
+
+</head>
+<body>
+    <nav role="navigation">Fixed Nav <p>(initially all subnav items are just #anchor links to sections within this index view.)</p></nav>
+    <main role="main">
+        <header role="banner">
+            <h1>Hero/Bio</h1>
+            <p>a brief bio</p>
+                
+            <p>(with a 'more' toggle button <br>to display extended bio,<br><br>else link to 'about' page...)</p>
+            <p>Links to: Linkedin / GitHub / Resume / etc. </p>
+            <!-- ^^^^^^ perhaps best to just keep extended bio in a seperate 'about' html page? -->
+        </header>
+
+        <section id="extended-bio">
+          <p>(only when expanded)</p>
+            Extended Bio?
+            
+        </section>
+
+        <section>
+            Thinkful Project 1
+            <div class="devicon">
+              <!-- 
+                thanks to http://konpa.github.io/devicon/ 
+                I'm using monochrome versions, but there are also detailed colour versions, too.
+              -->
+              <!-- Icon: HTML5 (with text)-->
+              <i class="devicon-html5-plain-wordmark"></i>
+              <!-- Icon: CSS3 (with text)-->
+              <i class="devicon-css3-plain-wordmark"></i>
+              <!-- Icon: JS -->
+              <i class="devicon-javascript-plain"></i>
+              <!-- Icon: jQuery -->
+              <i class="devicon-jquery-plain-wordmark"></i>
+              <!-- Icon: GitHub -->
+              <i class="devicon-github-plain"></i>
+              <!-- Icon: Git -->
+              <i class="devicon-git-plain-wordmark"></i> 
+            </div>
+        </section>
+
+        <section>
+            Thinkful Project 2
+        </section>
+
+        <section>
+            Thinkful Project 3
+        </section>
+        
+        <section>
+            Previously, as a designer...
+            <p>(brief overview with a link to project overview page and from there perhpas sub-pages, too?)</p>
+        </section>
+
+    </main>
+    <footer role="content-info">Footer Links:<br> <p>Linkedin / GitHub / Resume / etc. </p></footer>
+</body>
+</html>

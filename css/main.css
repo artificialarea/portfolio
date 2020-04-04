@@ -15,7 +15,7 @@ body {
 
 nav,
 footer {
-  padding: 1% 0;
+  padding: 2% 2%;
   background-color: #aaa;
 }
 
@@ -27,15 +27,38 @@ nav {
   z-index: 10;
 }
 
+div{
+  padding: 10%;
+}
+
+.devicon {
+  /* DEFAULT FONT-SIZE ////////////////*/
+  /* font-size: 40px; */
+  font-size: 30px;
+
+  /* DEFAULT COLOR ////////////////////*/ 
+  /* depends on the icon, but when removed, */
+  /* color: #444;  */
+  /* NOTE: to manipulate color have to remove 'colored' class, e.g. 
+  <i class="devicon-css3-plain-wordmark colored"></i> */
+}
+
+.devicon-git-plain-wordmark {
+  font-size: 60px;
+}
+
+.devicon-javascript-plain {
+  font-size: 20px;
+}
 
 
 header {
-  padding: 12% 0;
+  padding: 24% 0 12% 0;
 }
 
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 6% 2%;
   background-color: #bbb;
 }
 
@@ -49,6 +72,36 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+p {
+  font-size: 0.7em;
+}
+
+
+
+
+
+/* DEVICONS!!!!! //////////////////////*/
+
+.devicon {
+  /* DEFAULT FONT-SIZE ////////////////*/
+  /* font-size: 40px; */
+  font-size: 30px;
+
+  /* DEFAULT COLOR ////////////////////*/ 
+  /* depends on the icon, but when removed, */
+  /* color: #444;  */
+  /* NOTE: to manipulate color have to remove 'colored' class, e.g. 
+  <i class="devicon-css3-plain-wordmark colored"></i> */
+}
+
+.devicon-git-plain-wordmark {
+  font-size: 60px;
+}
+
+.devicon-javascript-plain {
+  font-size: 20px;
+}
+
 
 /*/////////////////////////////////////////////////////////
 // STANDARD RESPONSIVE DESIGN BREAKPOINTS /////////////////
@@ -56,6 +109,10 @@ section:nth-child(even) {
 
 /*780////////////////////////////////////////////////////*/
 @media screen and (min-width: 768px) {
+
+  header {
+    padding: 12% 0;
+  }
 
 }
 
