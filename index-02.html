@@ -11,54 +11,51 @@
 
 </head>
 <body>
-    <nav role="navigation">Fixed Nav <p></p></nav>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
     <main role="main">
-        <header role="banner">
+        <header role="banner" id="about" >
 
             <h1>Hello.</h1>
             <p>A brief bio about me. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus inventore quaerat earum tempore nemo illo dicta! Consectetur possimus reprehenderit recusandae suscipit in maiores, animi, molestias quia itaque, amet repellat modi. 
             <p>I can be reached at <a href="mailto:sachased@gmail.com" target="_blank">sachased@gmail.com</a>.
         
-            <ul>
+            <ul class="social-icons">
               <li><a href="https://www.linkedin.com/in/sachased/" target="_blank"><img src="img/linkedIn-01.png" width="25px"></a></li>
               <li><a href="https://github.com/artificialarea" target="_blank"><i class="devicon-github-plain"></i></a></li>
             </ul>
 
         </header>
 
-        <!--
-        <section id="extended-bio">
-          <p>(only when expanded)</p>
-            Extended Bio?
-            
-        </section>
-        -->
-        <section>
-            Thinkful Project 1
-            <img src="img/x.png">
-            
+        <section id="projects">
+            <img src="img/x.png" class="project-image">
+            <div role="content" class="project-info">
+                <h2>Cinematic Quiz</h2>
+                <div class="devicon">
+                  <!-- 
+                    thanks to http://konpa.github.io/devicon/ 
+                    I'm using monochrome versions, but there are also detailed colour versions, too.
+                  -->
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-jquery-plain-wordmark"></i>
+              </div>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero accusamus voluptatum commodi, sed nostrum dicta corporis quidem tempore, iure pariatur reiciendis reprehenderit aliquam exercitationem. Corrupti voluptatibus voluptate quia tempore!</p>
+
+                <p>See: <button>LIVE</button>
+                <button>REPO</button>
+                
+            </div>
         </section>
 
         <section>
             Thinkful Project 2
-            <div class="devicon">
-              <!-- 
-                thanks to http://konpa.github.io/devicon/ 
-                I'm using monochrome versions, but there are also detailed colour versions, too.
-              -->
-              <!-- Icon: HTML5 (with text)-->
-              <i class="devicon-html5-plain-wordmark"></i>
-              <!-- Icon: CSS3 (with text)-->
-              <i class="devicon-css3-plain-wordmark"></i>
-              <!-- Icon: JS -->
-              <i class="devicon-javascript-plain"></i>
-              <!-- Icon: jQuery -->
-              <i class="devicon-jquery-plain-wordmark"></i>
-              <!-- Icon: GitHub -->
-              <i class="devicon-github-plain"></i>
-              <!-- Icon: Git -->
-              <i class="devicon-git-plain-wordmark"></i> 
-            </div>
+           
         </section>
 
         <section>

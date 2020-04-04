@@ -21,10 +21,25 @@ body {
   /* margin: 20px; */
 }
 
+h1 {
+
+}
+
+h2 {
+  margin: 0 5px 0;
+
+}
+
+p {
+  font-size: 0.7em;
+}
+
 nav,
 footer {
-  padding: 2% 2%;
-  background-color: #aaa;
+  padding: 2% 5%;
+  background-color: black;
+  opacity: 0.9;
+  color: #ccc;
 }
 
 nav {
@@ -33,33 +48,50 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
+  
 }
 
-ul {
+nav ul {
+  float: right;
+  font-size: 0.8em;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+
+
+.social-icons {
   list-style: none;
   font-size: 24px;
   padding: 0;
   
 }
 
-ul a {
+.social-icons a {
   text-decoration: none;
-}
-
-ul a:visited {
   color: black;
 }
 
-ul a:hover {
+.social-icons a:hover {
   color: grey;
 }
+
 li {
   display: inline-block;
 }
 
-div{
-  padding: 10%;
-}
 
 
 header {
@@ -68,22 +100,11 @@ header {
 
 section {
   min-height: 200px;
-  padding: 6% 2%;
+  padding: 4% 4%;
   background-color: #ddd;
   margin-bottom: 20px;
 }
 
-/* section:nth-child(even) {
-  background-color: #ddd;
-} */
-
-/*
-section#extended-bio {
-  border-top: 1px dashed #999;
-  background-color: rgb(250, 250, 250);
-  color: #999;
-}
-*/
 
 section > img {
   width: 100%;
@@ -91,9 +112,7 @@ section > img {
   opacity: 0.5;
 }
 
-p {
-  font-size: 0.7em;
-}
+
 
 
 
@@ -112,10 +131,6 @@ p {
   <i class="devicon-css3-plain-wordmark colored"></i> */
 }
 
-.devicon-git-plain-wordmark {
-  font-size: 60px;
-}
-
 .devicon-javascript-plain {
   font-size: 20px;
 }
@@ -130,6 +145,15 @@ p {
 
   header {
     /* padding: 12% 0; */
+  }
+
+  .project-image {
+    width: 50%;
+    float: left;
+  }
+
+  .project-info {
+    
   }
 
 }
