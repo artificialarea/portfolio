@@ -1,5 +1,12 @@
 /* MOBILE-FIRST, INNIT! ;P */
 
+.table-of-contents {
+  padding: 5%;
+  margin-top: 60px;
+  background-color: white;
+  text-align: left;
+}
+
 * {
   box-sizing: border-box;
 }
