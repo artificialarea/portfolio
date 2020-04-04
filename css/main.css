@@ -1,0 +1,71 @@
+/* MOBILE-FIRST, INNIT! ;P */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+
+header {
+  padding: 12% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section#extended-bio {
+  border-top: 1px dashed #999;
+  background-color: rgb(250, 250, 250);
+  color: #999;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+
+/*/////////////////////////////////////////////////////////
+// STANDARD RESPONSIVE DESIGN BREAKPOINTS /////////////////
+/////////////////////////////////////////////////////////*/
+
+/*780////////////////////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+
+}
+
+/*1024///////////////////////////////////////////////////*/ /* maybe 980px? */
+@media screen and (min-width: 1024px) {  
+
+}
+
+/*1200///////////////////////////////////////////////////*/
+@media screen and (min-width: 1200px) {
+
+}
+

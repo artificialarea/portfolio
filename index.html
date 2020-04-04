@@ -4,35 +4,41 @@
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <nav role="navigation">Nav</nav>
     <main role="main">
         <header role="banner">
-            <h1>Hero</h1>
+            <h1>Hero/Bio</h1>
+            <p>a brief bio</p>
+                
+            <p>(with a 'more' toggle button <br>to display extended bio,<br> else link to 'about' page...)</p>
+            <!-- ^^^^^^ perhaps best to just keep extended bio in a seperate 'about' html page? -->
         </header>
 
-        <section>
-            Section 1
+        <section id="extended-bio">
+            Extended Bio?
+            <p>(only if expanded)</p>
         </section>
 
         <section>
-            Section 2
+            Thinkful Project 1
         </section>
 
         <section>
-            Section 3
+            Thinkful Project 2
         </section>
 
         <section>
-            Project 3
+            Thinkful Project 3
         </section>
         
         <section>
-            Section 4
+            Previously, as a designer...
+            <p>(brief overview with link to project overview html page?)</p>
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">Footer Links:<br> Linkedin / GitHub / Resume / etc.</footer>
 </body>
 </html>
