@@ -1,59 +1,54 @@
 /* MOBILE-FIRST, INNIT! ;P */
 
-.table-of-contents {
-  padding: 5%;
-  margin-top: 60px;
-  background-color: white;
-  text-align: left;
-}
-
 * {
   box-sizing: border-box;
+  /* border: 1px dotted red; */
 }
 
 body {
   font-family: "Open Sans",
   sans-serif; 
-  font-size: 20px;
-  color: #444;
-  /* text-align: center; */
+  font-size: 1em; /* 16px */
   line-height: 1.5;
-  /* margin: 20px; */
-}
-
-h1 {
-
+  color: #444;
 }
 
 h2 {
   margin: 0;
-
 }
 
-p {
-  font-size: 0.7em;
+li {
+  display: inline-block;
 }
 
-nav,
-footer {
-  padding: 2% 5%;
+
+/* NAV /////////////////////////////////*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  border: 0;
   background-color: black;
   opacity: 0.9;
+  font-size: 1.2em;
   color: #ccc;
-}
 
-nav {
-  position: fixed;
+  /* at this stage, 
+  there isn't enough sub-content etc 
+  to warrant an omnipresent navigation. */
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
-  
+  z-index: 10; */
 }
 
 nav ul {
-  float: right;
   font-size: 0.8em;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
 }
 
 nav li {
@@ -70,12 +65,12 @@ nav a:hover {
   color: white;
 }
 
-.icons-techstack {
 
-  font-size: 24px;
-  /* margin hack b/c too much space below baseline of icon font */
-  margin-bottom: -10px; 
-  
+/* HERO/ABOUT //////////////////////////////////////*/
+
+header {
+  padding: 2% 2% 2% 2%;
+  max-width: 700px;
 }
 
 .icons-social {
@@ -84,68 +79,86 @@ nav a:hover {
   padding: 0;
   
 }
-
+.icons-social i {
+  padding: 2px;
+}
 .icons-social a {
   text-decoration: none;
-  color: #333;
+  color: #555;
 }
-
 .icons-social a:hover {
   color: black;
 }
 
-li {
-  display: inline-block;
-}
 
 
-
-header {
-  padding: 24% 2% 12% 2%;
-}
+/* PROJECTS //////////////////////////////////////*/
 
 section {
-  min-height: 200px;
-  padding: 4% 4%;
-  background-color: #ddd;
+  /* max-width: 480px; */
+  padding: 10px;
+  background-color: rgb(238, 236, 236);
   margin-bottom: 20px;
 }
 
-
-section > img {
+section img {
   width: 100%;
   border: 2px solid black;
   opacity: 0.5;
 }
 
-
-
-
-
-
-/* via devicon.min.css //////////////////////*/
-
-.devicon {
-  /* DEFAULT FONT-SIZE ////////////////*/
-  /* font-size: 40px; */
-  font-size: 30px;
-
-  /* DEFAULT COLOR ////////////////////*/ 
-  /* depends on the icon, but when removed, */
-  /* color: #444;  */
-  /* NOTE: to manipulate color have to remove 'colored' class, e.g. 
-  <i class="devicon-css3-plain-wordmark colored"></i> */
+.icons-techstack {
+  font-size: 24px;
+  color: #999;
+  /* margin hack b/c too much space below baseline of icon font */
+  margin-bottom: -10px; 
 }
 
-.devicon-javascript-plain {
-  font-size: 20px;
+.btn {
+  padding: 5px 10px;
+  border: 2px solid black; 
+  color: black;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
-/* via font-awesome.min.css //////////////////////*/
+/* FOOTER //////////////////////////////////////*/
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.9;
+  color: #ccc;
+}
 
+footer p {
+  font-size: 0.7em;
+  margin: 0;
+  padding-left: 10px;
+  
+}
 
-
+footer .icons-social {
+  list-style: none;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+  
+}
+footer .icons-social a {
+  text-decoration: none;
+  color: #ccc;
+}
+footer .icons-social a:hover {
+  color: white;
+}
 
 
 
@@ -153,20 +166,25 @@ section > img {
 // STANDARD RESPONSIVE DESIGN BREAKPOINTS /////////////////
 /////////////////////////////////////////////////////////*/
 
-/*780////////////////////////////////////////////////////*/
-@media screen and (min-width: 768px) {
+/*420////////////////////////////////////////////////////*/
+/* kind of a no-man's land... */
+@media screen and (min-width: 480px) {
 
-  header {
-    /* padding: 12% 0; */
+
+}
+
+/*768////////////////////////////////////////////////////*/
+@media screen and (min-width: 760px) {
+
+  #projects {
+    display:flex;
+    justify-content: space-evenly;
+    /* flex-flow: wrap; */
+
   }
 
-  .project-image {
-    width: 50%;
-    float: left;
-  }
-
-  .project-info {
-    
+  section {
+    width: 32%;
   }
 
 }

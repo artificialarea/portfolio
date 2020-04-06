@@ -1,12 +1,5 @@
 /* MOBILE-FIRST, INNIT! ;P */
 
-.table-of-contents {
-  padding: 5%;
-  margin-top: 60px;
-  background-color: white;
-  text-align: left;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -94,53 +87,3 @@ section > img {
 p {
   font-size: 0.7em;
 }
-
-
-
-
-/* DEVICONS!!!!! //////////////////////*/
-
-.devicon {
-  /* DEFAULT FONT-SIZE ////////////////*/
-  /* font-size: 40px; */
-  font-size: 30px;
-
-  /* DEFAULT COLOR ////////////////////*/ 
-  /* depends on the icon, but when removed, */
-  /* color: #444;  */
-  /* NOTE: to manipulate color have to remove 'colored' class, e.g. 
-  <i class="devicon-css3-plain-wordmark colored"></i> */
-}
-
-.devicon-git-plain-wordmark {
-  font-size: 60px;
-}
-
-.devicon-javascript-plain {
-  font-size: 20px;
-}
-
-
-/*/////////////////////////////////////////////////////////
-// STANDARD RESPONSIVE DESIGN BREAKPOINTS /////////////////
-/////////////////////////////////////////////////////////*/
-
-/*780////////////////////////////////////////////////////*/
-@media screen and (min-width: 768px) {
-
-  header {
-    /* padding: 12% 0; */
-  }
-
-}
-
-/*1024///////////////////////////////////////////////////*/ /* maybe 980px? */
-@media screen and (min-width: 1024px) {  
-
-}
-
-/*1200///////////////////////////////////////////////////*/
-@media screen and (min-width: 1200px) {
-
-}
-
