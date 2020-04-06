@@ -69,18 +69,19 @@ nav a:hover {
 /* HERO/ABOUT //////////////////////////////////////*/
 
 header {
-  padding: 2% 2% 2% 2%;
+  padding: 2% 2% 8% 2%;
   max-width: 700px;
 }
 
 .icons-social {
   list-style: none;
-  font-size: 24px;
   padding: 0;
   
 }
 .icons-social i {
   padding: 2px;
+  margin-right: 10px;
+  font-size: 40px;
 }
 .icons-social a {
   text-decoration: none;
@@ -176,11 +177,16 @@ footer .icons-social a:hover {
 /*768////////////////////////////////////////////////////*/
 @media screen and (min-width: 760px) {
 
+  .icons-social i {
+    padding: 2px;
+    margin-right: 2px;
+    font-size: 24px;
+  }
+
   #projects {
     display:flex;
     justify-content: space-evenly;
     /* flex-flow: wrap; */
-
   }
 
   section {
