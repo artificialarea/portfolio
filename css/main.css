@@ -2,36 +2,210 @@
 
 * {
   box-sizing: border-box;
+  /* border: 1px dotted red; */
 }
 
 body {
   font-family: "Open Sans",
   sans-serif; 
-  /* font-size: 20px; */
-  color: #444;
-  /* text-align: center; */
+  font-size: 1em; /* 16px */
   line-height: 1.5;
-  /* margin: 20px; */
+  color: #444;
 }
 
-.table-of-contents {
-  padding: 5%;
-  margin-top: 60px;
-  background-color: white;
-  text-align: left;
+h2 {
+  margin: 0;
 }
 
-h1 {
-  weight: normal;
-  font-size: 1em;
+li {
+  display: inline-block;
+}
+
+
+/* NAV /////////////////////////////////*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  background-color: black;
+  opacity: 0.9;
+  font-size: 1.2em;
+  color: #ccc;
+
+  /* at this stage, 
+  there isn't enough sub-content etc 
+  to warrant an omnipresent navigation. */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; */
+}
+
+nav ul {
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+
+/* HERO/ABOUT //////////////////////////////////////*/
+
+header {
+  padding: 2% 2% 8% 2%;
+  max-width: 700px;
+}
+
+.icons-social {
+  list-style: none;
+  padding: 0;
+  
+}
+.icons-social i {
+  padding: 2px;
+  
+}
+.icons-social a {
+  text-decoration: none;
+  color: #555;
+}
+.icons-social a:hover {
+  color: black;
+}
+
+header .icons-social i {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+
+/* PROJECTS //////////////////////////////////////*/
+
+section {
+  /* max-width: 480px; */
+  padding: 10px;
+  background-color: rgb(238, 236, 236);
+  margin-bottom: 20px;
+}
+
+section img {
+  width: 100%;
+  border: 2px solid black;
+  opacity: 0.5;
+}
+
+.icons-techstack {
+  font-size: 24px;
   color: #999;
+  /* margin hack b/c too much space below baseline of icon font */
+  margin-bottom: -10px; 
 }
 
-a {
+.btn {
+  padding: 5px 10px;
+  border: 2px solid black; 
+  color: black;
   font-weight: bold;
 }
-
-p {
-  margin-bottom: 30px;
-  color: #999;
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
+
+/* FOOTER //////////////////////////////////////*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.9;
+  color: #ccc;
+}
+
+footer p {
+  font-size: 0.7em;
+  margin: 0;
+  padding-left: 10px;
+  
+}
+
+footer .icons-social {
+  list-style: none;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+  
+}
+footer .icons-social a {
+  text-decoration: none;
+  color: #ccc;
+}
+footer .icons-social a:hover {
+  color: white;
+}
+
+
+
+/*/////////////////////////////////////////////////////////
+// STANDARD RESPONSIVE DESIGN BREAKPOINTS /////////////////
+/////////////////////////////////////////////////////////*/
+
+/*420////////////////////////////////////////////////////*/
+/* kind of a no-man's land... */
+@media screen and (min-width: 480px) {
+
+
+}
+
+/*768////////////////////////////////////////////////////*/
+@media screen and (min-width: 760px) {
+
+  header .icons-social i {
+    padding: 2px;
+    margin-right: 2px;
+    font-size: 24px;
+  }
+
+  #projects {
+    display:flex;
+    justify-content: space-evenly;
+    /* flex-flow: wrap; */
+  }
+
+  section {
+    width: 32%;
+  }
+
+}
+
+/*1024///////////////////////////////////////////////////*/ /* maybe 980px? */
+@media screen and (min-width: 1024px) {  
+
+}
+
+/*1200///////////////////////////////////////////////////*/
+@media screen and (min-width: 1200px) {
+
+}
+
