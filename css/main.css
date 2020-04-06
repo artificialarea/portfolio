@@ -26,3 +26,12 @@ h1 {
   font-size: 1em;
   color: #999;
 }
+
+a {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 30px;
+  color: #999;
+}

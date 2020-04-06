@@ -80,8 +80,7 @@ header {
 }
 .icons-social i {
   padding: 2px;
-  margin-right: 10px;
-  font-size: 40px;
+  
 }
 .icons-social a {
   text-decoration: none;
@@ -91,6 +90,11 @@ header {
   color: black;
 }
 
+header .icons-social i {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 40px;
+}
 
 
 /* PROJECTS //////////////////////////////////////*/
@@ -177,7 +181,7 @@ footer .icons-social a:hover {
 /*768////////////////////////////////////////////////////*/
 @media screen and (min-width: 760px) {
 
-  .icons-social i {
+  header .icons-social i {
     padding: 2px;
     margin-right: 2px;
     font-size: 24px;
