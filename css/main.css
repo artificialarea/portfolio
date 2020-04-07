@@ -1,5 +1,12 @@
 /* MOBILE-FIRST, INNIT! ;P */
 
+html{
+  /* for using REM units*/ 
+  /* font-size: 62.5%;  */
+
+  /* apparently aides in the jquery animate, but don't look smooth to me */
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
@@ -13,7 +20,8 @@ body {
   font-family: 'Roboto', 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1em; /* 1em =16px */
+  /* 1em = 16px */
+  font-size: 1em; 
   line-height: 1.5;
   color: rgba(0,0,0,0.87);
   background-color: rgb(238, 236, 236);
