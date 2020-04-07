@@ -61,7 +61,7 @@ nav {
   border: 0;
   background-color: black;
   opacity: 0.9;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 700;
 
   /* at this stage, 
@@ -84,7 +84,7 @@ nav ul {
 nav .subnav-byline {
   position: absolute;
   left: 0;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   color: rgb(255, 255, 255);
 }
 
