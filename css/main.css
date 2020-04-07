@@ -31,7 +31,7 @@ h2 {
 }
 
 p {
-  font-size: 0.87em; /* 14px */
+  /* font-size: 0.87em;  */
 }
 
 li {
@@ -211,6 +211,10 @@ footer .icons-social a:hover {
 /*768////////////////////////////////////////////////////*/
 @media screen and (min-width: 760px) {
 
+  p {
+    font-size: 0.87em; /* 14px */
+  }
+  
   header {
     max-width: 85%;
     margin-right: auto;
@@ -231,6 +235,8 @@ footer .icons-social a:hover {
 
   section {
     width: 40%;
+    /* border: 1px solid rgba(0,0,0,0.2); */
+    /* padding: 20px; */
   }
 
 }
