@@ -1,44 +1,28 @@
 'use strict';
 
 function init() {
-  anchorAnime();
+  animatedAnchorScroll();
 }
 
+// Due to the lack of real estate to cover (at this moment) on the page, 
+// this enhancement is completely unneccessary, 
+// but thought what the hell, I'll stretch the javascript muscles a bit.
+// Should refactor from jQuery to Vanilla JS
+// might even make the animation smoother than it currently is.
 // NOTE: animation ignored by Safari (OS + iOS) =/ 
-function anchorAnime() {
+
+function animatedAnchorScroll() {
+  console.log(window.location);
   $('a.js-scroll-link').click(function(event) {
     event.preventDefault();
     $('html, body').animate({ 
       scrollTop: $($(this).attr('href')).offet().top 
-    }, 1000);
+    }, 800);
+
+    // REFACTOR
+    // replace the window.location URL so it purges it of the #anchor
+
   });
-
-  // Add smooth scrolling to all links
-  // $("a").on('click', function(event) {
-
-  //   // Make sure this.hash has a value before overriding default behavior
-  //   if (this.hash !== "") {
-  //     // Prevent default anchor click behavior
-  //     event.preventDefault();
-
-  //     // Store hash
-  //     var hash = this.hash;
-
-  //     // Using jQuery's animate() method to add smooth page scroll
-  //     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  //     $('html, body').animate({
-  //       scrollTop: $(hash).offset().top
-  //     }, 1000, function(){
-
-  //       // Add hash (#) to URL when done scrolling (default click behavior)
-  //       window.location.hash = hash;
-  //     });
-  //   } // End if
-  // });
 }
-
-
-
-
 
 $(init());
