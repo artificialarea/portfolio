@@ -25,11 +25,10 @@ body {
   line-height: 1.5;
   color: rgba(0,0,0,0.87);
   background-color: rgb(238, 236, 236);
-
-  
-
+  padding: 0 8px;
 }
-h1, h2, h3,h4, h5 {
+
+h1, h2, h3,h4, h5, nav {
   /* Roboto Slab: 500 Medium, 700 Bold, 900 Black */
   font-family: 'Roboto Slab', serif;
 }
@@ -57,7 +56,12 @@ nav {
   background-color: black;
   opacity: 0.9;
   font-size: 1.2em;
+  font-weight: 700;
   color: #ccc;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 
   /* at this stage, 
   there isn't enough sub-content etc 
@@ -96,6 +100,8 @@ nav a:hover {
 header {
   padding: 2% 2% 8% 2%;
   max-width: 700px;
+  /* b/c nav position:absolute (ergo, outside the flow) */
+  margin-top: 70px; 
 }
 
 .icons-social {
