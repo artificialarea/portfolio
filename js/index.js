@@ -4,6 +4,7 @@ function init() {
   anchorAnime();
 }
 
+// NOTE: animation ignored by Safari (OS + iOS) =/ 
 function anchorAnime() {
   $('a.js-scroll-link').click(function(event) {
     event.preventDefault();

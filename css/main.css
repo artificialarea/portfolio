@@ -33,6 +33,12 @@ h1, h2, h3,h4, h5, nav {
   font-family: 'Roboto Slab', serif;
 }
 
+h1 {
+  line-height: 1;
+  /* to force text wrap after 'design' */
+  width: 350px;
+}
+
 h2 {
   margin: 0;
 }
@@ -48,8 +54,8 @@ li {
 
 /* NAV /////////////////////////////////*/
 nav {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
   width: 100%;
   padding: 10px;
   border: 0;
@@ -57,36 +63,38 @@ nav {
   opacity: 0.9;
   font-size: 1.2em;
   font-weight: 700;
-  color: #ccc;
-
-  position: absolute;
-  top: 0;
-  left: 0;
 
   /* at this stage, 
   there isn't enough sub-content etc 
-  to warrant an omnipresent navigation. */
-  /* position: fixed;
+  to warrant an omnipresent position:fixed navigation. */
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 10; */
 }
 
 nav ul {
   font-size: 0.8em;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: flex-end;
   padding: 10px;
   margin: 0;
 }
 
+nav .subnav-byline {
+  position: absolute;
+  left: 0;
+  padding-left: 10px;
+  color: rgb(255, 255, 255);
+}
+
 nav li {
-  display: inline-block;
-  margin-left: 10px;
+  /* display: inline-block; */
+  margin-left: 20px;
 }
 
 nav a {
-  color: #ccc;
+  color: #999;
   text-decoration: none;
 }
 
@@ -122,7 +130,7 @@ header {
 }
 
 header .icons-social i {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-right: 10px;
   font-size: 40px;
 }
