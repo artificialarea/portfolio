@@ -119,7 +119,6 @@ header {
 .icons-social {
   list-style: none;
   padding: 0;
-  
 }
 .icons-social i {
   padding: 2px;
@@ -236,9 +235,7 @@ footer .icons-social a:hover {
 /*768////////////////////////////////////////////////////*/
 @media screen and (min-width: 760px) {
 
-  p {
-    font-size: 0.87em; /* 14px */
-  }
+  
   
   header {
     max-width: 85%;
@@ -256,6 +253,10 @@ footer .icons-social a:hover {
     display:flex;
     justify-content: space-evenly;
     /* flex-flow: wrap; */
+  }
+
+  #projects p {
+    font-size: 0.87em; /* 14px */
   }
 
   section {
