@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <title>Sacha Sedriks: Portfolio v1.o</title>
+
+    <!--
+      Permanently in beta as I learn how to code. ;P
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
@@ -21,7 +25,8 @@
       https://www.bootstrapcdn.com/fontawesome/
 
       font-awesome css wasn't working for some reason, so using a personalised 'kit' for now... https://fontawesome.com/kits 
-      Unfortunately, because the script lacks an integrity key, I get a warning error in the Web Dev console. I've contacted fontawesome for assistance...
+
+      Unfortunately, because the script lacks an integrity key, I get a warning error in the Web Dev console. I've contacted fontawesome to address this and this was their response: "You are right. We have updated our site to be compliant and are waiting on some of the services that we use to also update their cookies. This warning should have no affect on the icons working."
     -->
     <script src="https://kit.fontawesome.com/99b719059f.js" crossorigin="anonymous"></script>
 
@@ -39,7 +44,7 @@
     </ul>
   </nav>
 
-  <header role="header" id="about" >
+  <header role="banner" id="about">
 
     <h1>Pivoting from design to development.</h1>
     <p>A brief bio about me. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus inventore quaerat earum tempore nemo illo dicta! Consectetur possimus reprehenderit recusandae suscipit in maiores, animi, molestias quia itaque, amet repellat modi. 
@@ -64,19 +69,21 @@
           <h2>Cinematic Quiz</h2>
           <p class="tech-used">HTML / CSS / JavaScript / jQuery</p>
 
-          <!-- may revisit icons in design...
+          <!-- may revisit icons in design in a later iteration...
           <div class="icons-techstack">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-js"></i>
           </div>
           -->
-          
 
           <p class="project-description">A multiple choice quiz allowed me to experiment with transversing and manipulating the DOM via jQuery and storing and retrieving data on the client-side via javascript to determine if submitted answers were correct and updating progress and contextual views accordingly. While the associated animated film stills provide a break from the mundane.</p>
           
-          <a href="https://artificialarea.github.io/thinkful-quiz/" target="_blank"><button type="button" class="btn btn-project">VIEW PROJECT</button></a>
-          <a href="https://github.com/artificialarea/thinkful-quiz" target="_blank"><button type="button" class="btn btn-repo">VIEW REPO</button></a>
+          <!-- <button type="button" class="btn btn-project"><a href="https://artificialarea.github.io/thinkful-quiz/" target="_blank">VIEW PROJECT</a></button>
+          <button type="button" class="btn btn-repo"><a href="https://github.com/artificialarea/thinkful-quiz" target="_blank">VIEW REPO</a></button> -->
+
+          <a href="https://artificialarea.github.io/thinkful-quiz/" target="_blank" class="button">VIEW PROJECT</a>
+          <a href="https://github.com/artificialarea/thinkful-quiz" target="_blank" class="button">VIEW REPO</a>
           
         
 
@@ -92,7 +99,7 @@
         
           <p class="project-description">An earlier portfolio of mine showcasing agency work done as an interaction designer primarily built in Flash with extensive Actionscript programming, including the portfolio site itself.</p>
           
-          <a href="http://artificialarea.com/portfolio" target="_blank"><button type="button" class="btn btn-project">VIEW PROJECT</button></a>
+          <a href="http://artificialarea.com/portfolio" target="_blank" class="button">VIEW PROJECT</a>
           
 
 

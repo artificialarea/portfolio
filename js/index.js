@@ -12,7 +12,7 @@ function init() {
 // NOTE: animation ignored by Safari (OS + iOS) =/ 
 
 function animatedAnchorScroll() {
-  console.log(window.location);
+  
   $('a.js-scroll-link').click(function(event) {
     event.preventDefault();
     $('html, body').animate({ 
@@ -21,6 +21,7 @@ function animatedAnchorScroll() {
 
     // REFACTOR
     // replace the window.location URL so it purges it of the #anchor
+    // console.log(window.location);
 
   });
 }
