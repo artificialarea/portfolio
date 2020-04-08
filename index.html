@@ -39,15 +39,15 @@
   <nav role="navigation">
     <ul>
       <li class="subnav-byline">Sacha Sedriks</li>
-      <li class="subnav-about"><a href="#about" class="js-scroll-link">About</a></li>
-      <li class="subnav-projects"><a href="#projects" class="js-scroll-link">Projects</a></li>
+      <li class="subnav-about"><a href="#about" class="js-scroll-link" aria-label="go to the about section">About</a></li>
+      <li class="subnav-projects"><a href="#projects" class="js-scroll-link" aria-label="go to the projects section">Projects</a></li>
     </ul>
   </nav>
 
   <header role="banner" id="about">
 
     <h1>Pivoting from design to development.</h1>
-    <p>A brief bio about me. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus inventore quaerat earum tempore nemo illo dicta! Consectetur possimus reprehenderit recusandae suscipit in maiores, animi, molestias quia itaque, amet repellat modi. 
+    <p>Working in the industry for many years as a user experience designer, I've been what they would call 'tech adjacent'.</p> 
     
     <address role="address">
       <ul class="icons-social">
@@ -63,45 +63,27 @@
   <main role="main">
 
     <div id="projects" class="container">
-      <section id="project-one">
+      <section id="project-one" aria-label="project one">
         <img src="img/screenshot-quiz.png" alt="image of project" class="project-image">
         <div role="content" class="project-info">
           <h2>Cinematic Quiz</h2>
           <p class="tech-used">HTML / CSS / JavaScript / jQuery</p>
-
-          <!-- may revisit icons in design in a later iteration...
-          <div class="icons-techstack">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-          </div>
-          -->
-
           <p class="project-description">A multiple choice quiz allowed me to experiment with transversing and manipulating the DOM via jQuery and storing and retrieving data on the client-side via javascript to determine if submitted answers were correct and updating progress and contextual views accordingly. While the associated animated film stills provide a break from the mundane.</p>
-          
-          <!-- <button type="button" class="btn btn-project"><a href="https://artificialarea.github.io/thinkful-quiz/" target="_blank">VIEW PROJECT</a></button>
-          <button type="button" class="btn btn-repo"><a href="https://github.com/artificialarea/thinkful-quiz" target="_blank">VIEW REPO</a></button> -->
 
-          <a href="https://artificialarea.github.io/thinkful-quiz/" target="_blank" class="button">VIEW PROJECT</a>
-          <a href="https://github.com/artificialarea/thinkful-quiz" target="_blank" class="button">VIEW REPO</a>
-          
-        
+          <a href="https://artificialarea.github.io/thinkful-quiz/" target="_blank" class="button" aria-label="view project">VIEW PROJECT</a>
+          <a href="https://github.com/artificialarea/thinkful-quiz" target="_blank" class="button" aria-label="view repo">VIEW REPO</a>
 
         </div>
       </section>
 
-      <section id="project-two">
+      <section id="project-two" aria-label="project two">
         <img src="img/screenshot-aA2.png" alt="image of project" class="project-image">
         <div role="content" class="project-info">
           <h2>Elsewhere...</h2>
           <p class="tech-used">HTML / Flash / Actionscript</p>
-
-        
           <p class="project-description">An earlier portfolio of mine showcasing agency work done as an interaction designer primarily built in Flash with extensive Actionscript programming, including the portfolio site itself.</p>
           
-          <a href="http://artificialarea.com/portfolio" target="_blank" class="button">VIEW PROJECT</a>
-          
-
+          <a href="http://artificialarea.com/portfolio" target="_blank" class="button" aria-label="view project">VIEW PROJECT</a>
 
         </div>
       </section>
@@ -114,9 +96,9 @@
     <p>© 2020. Made with care (and my code).</p>
     <address role="address">
       <ul class="icons-social">
-        <li><a href="https://www.linkedin.com/in/sachased/" target="_blank" aria-label="Linkedin profile"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/artificialarea" target="_blank" aria-label="Github profile"><i class="fab fa-github"></i></a></li>
-        <li><a href="mailto:sachased@gmail.com" target="_blank" aria-label="Email address, sachased@gmail.com"><i class="far fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sachased/" target="_blank" aria-label="a link to my Linkedin profile"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/artificialarea" target="_blank" aria-label="a link to my Github profile"><i class="fab fa-github"></i></a></li>
+        <li><a href="mailto:sachased@gmail.com" target="_blank" aria-label="a link to my email address"><i class="far fa-envelope"></i></a></li>
       </ul>
     </address>
   </footer>
