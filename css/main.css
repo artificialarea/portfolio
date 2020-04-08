@@ -112,6 +112,10 @@ header {
   margin-top: 70px; 
 }
 
+.highlight {
+  color: #0C95F5;
+}
+
 .icons-social {
   list-style: none;
   padding: 0;
@@ -123,7 +127,8 @@ header {
 }
 .icons-social a {
   text-decoration: none;
-  color: #555;
+  color: rgba(0,0,0,0.5);
+  color: #0C95F5;
 }
 .icons-social a:hover {
   color: black;
@@ -151,18 +156,12 @@ section img {
   /* opacity: 0.5; */
 }
 
-.icons-techstack {
-  display: inline-block;
-  font-size: 24px;
-  color: #999;
-  /* margin hack b/c too much space below baseline of icon font */
-  /* margin-bottom: -10px;  */
-}
 
 .tech-used {
   font-family: 'Roboto Slab', serif;
   font-size: 0.8em;
   color: rgba(0,0,0,0.3);
+  color: red;
   margin-top: 0;
 }
 

@@ -7,7 +7,7 @@ function init() {
 // Due to the lack of real estate to cover (at this moment) on the page, 
 // this enhancement is completely unneccessary, 
 // but thought what the hell, I'll stretch the javascript muscles a bit.
-// Should refactor from jQuery to Vanilla JS
+// Should REFACTOR from jQuery to Vanilla JS
 // might even make the animation smoother than it currently is.
 // NOTE: animation ignored by Safari (OS + iOS) =/ 
 
