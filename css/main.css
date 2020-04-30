@@ -142,14 +142,14 @@ header .icons-social i {
 
 /* PROJECTS //////////////////////////////////////*/
 
-section {
+.project {
   /* max-width: 480px; */
   padding: 10px;
   background-color: rgb(238, 236, 236);
   margin-bottom: 100px;
 }
 
-section img {
+.project img {
   width: 100%;
   /* border: 2px solid black; */
   /* opacity: 0.5; */
@@ -259,7 +259,7 @@ footer .icons-social a:hover {
     font-size: 0.87em; /* 14px */
   }
 
-  section {
+  .project {
     width: 40%;
     /* border: 1px solid rgba(0,0,0,0.2); */
     /* padding: 20px; */
