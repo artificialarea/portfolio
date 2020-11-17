@@ -1,7 +1,7 @@
 'use strict';
 
 function init() {
-  animatedAnchorScroll();
+    animatedAnchorScroll();
 }
 
 // Due to the lack of real estate to cover (at this moment) on the page, 
@@ -12,18 +12,18 @@ function init() {
 // NOTE: animation ignored by Safari (OS + iOS) =/ 
 
 function animatedAnchorScroll() {
-  
-  $('a.js-scroll-link').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({ 
-      scrollTop: $($(this).attr('href')).offet().top 
-    }, 800);
 
-    // REFACTOR
-    // replace the window.location URL so it purges it of the #anchor
-    // console.log(window.location);
+    $('a.js-scroll-link').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500);
 
-  });
+        // REFACTOR
+        // replace the window.location URL so it purges it of the #anchor
+        // console.log(window.location);
+
+    });
 }
 
 $(init());
