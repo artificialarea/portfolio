@@ -1,222 +1,254 @@
 /* MOBILE-FIRST, INNIT! ;P */
 
 html{
-  /* for using REM units*/ 
-  /* font-size: 62.5%;  */
+    /* for using REM units*/ 
+    /* font-size: 62.5%;  */
 
-  /* apparently aides in the jquery animate, but don't look smooth to me */
-  scroll-behavior: smooth;
+    /* apparently aides in the jquery animate, but don't look smooth to me */
+    scroll-behavior: smooth;
 }
 
 * {
-  box-sizing: border-box;
-  /* border: 1px dotted red; */
+    box-sizing: border-box;
+    /* border: 1px dotted red; */
 }
 
 body {
-  -webkit-font-smoothing: antialiased; /* !CRUCIAL! font looks too thick otherwise */
+    -webkit-font-smoothing: antialiased; /* !CRUCIAL! font looks too thick otherwise */
 
-  /* Roboto: 300 Light, 400 Regular, 500 Medium, 700 Bold, 900 Black */
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  /* 1em = 16px */
-  font-size: 1em; 
-  line-height: 1.5;
-  color: rgba(0,0,0,0.87);
-  background-color: rgb(238, 236, 236);
-  padding: 0 8px;
+    /* Roboto: 300 Light, 400 Regular, 500 Medium, 700 Bold, 900 Black */
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* 1em = 16px */
+    font-size: 1em; 
+    line-height: 1.5;
+    color: rgba(0,0,0,0.87);
+    background-color: rgb(238, 236, 236);
+    padding: 0 8px;
 }
 
 h1, h2, h3,h4, h5, nav {
-  /* Roboto Slab: 500 Medium, 700 Bold, 900 Black */
-  font-family: 'Roboto Slab', serif;
+    /* Roboto Slab: 500 Medium, 700 Bold, 900 Black */
+    font-family: 'Roboto Slab', serif;
 }
 
 h1 {
-  line-height: 1;
-  /* to force text wrap after 'design' */
-  width: 350px;
+    line-height: 1;
+    /* to force text wrap after 'design' */
+    width: 350px;
 }
 
 h2 {
-  margin: 0;
+    margin: 0;
 }
 
 p {
-  /* font-size: 0.87em;  */
+    /* font-size: 0.87em;  */
 }
 
 li {
-  display: inline-block;
+    display: inline-block;
 }
 
 
 /* NAV /////////////////////////////////*/
 nav {
-  /* display: flex;
-  justify-content: flex-end; */
-  width: 100%;
-  padding: 10px;
-  border: 0;
-  background-color: black;
-  opacity: 0.9;
-  font-size: 1.4em;
-  font-weight: 700;
+    /* display: flex;
+    justify-content: flex-end; */
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: black;
+    opacity: 0.9;
+    font-size: 1.4em;
+    font-weight: 700;
 
-  /* at this stage, 
-  there isn't enough sub-content etc 
-  to warrant an omnipresent position:fixed navigation. */
-  position: absolute;
-  top: 0;
-  left: 0;
+    /* at this stage, 
+    there isn't enough sub-content etc 
+    to warrant an omnipresent position:fixed navigation. */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 nav ul {
-  font-size: 0.8em;
-  /* display: inline-block; */
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  margin: 0;
+    font-size: 0.8em;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 0;
 }
 
 nav .subnav-byline {
-  position: absolute;
-  left: 0;
-  /* padding-left: 10px; */
-  color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    /* padding-left: 10px; */
+    color: rgb(255, 255, 255);
 }
 
 nav li {
-  /* display: inline-block; */
-  margin-left: 20px;
+    /* display: inline-block; */
+    margin-left: 20px;
 }
 
 nav a {
-  color: #999;
-  text-decoration: none;
+    color: #999;
+    text-decoration: none;
 }
 
 nav a:hover {
-  color: white;
+    color: white;
 }
 
 
 /* HERO/ABOUT //////////////////////////////////////*/
 
 header {
-  padding: 2% 2% 8% 2%;
-  max-width: 700px;
-  /* b/c nav position:absolute (ergo, outside the flow) */
-  margin-top: 70px; 
+    padding: 2% 2% 8% 2%;
+    max-width: 700px;
+    /* b/c nav position:absolute (ergo, outside the flow) */
+    margin-top: 70px; 
+}
+
+.header--subheader {
+    padding: 2%;
+    margin-top: 0;
+    /* padding: 10px;
+    max-width: 700px;
+    padding-bottom: 40px;
+    margin: 0; */
+    /* margin: auto; */
+}
+
+.header--subheader h1 {
+    /* text-align: center;
+    margin: auto; */
+}
+
+.header--slogan {
+    /* display: inline-block; */
+}
+
+.bio {
+    display: inline-block;
+    width: 400px;
+}
+
+.avatar {
+    width: 200px;
+    display: block;
+    margin: auto;
 }
 
 .highlight {
-  color: #0C95F5;
+    color: #0C95F5;
 }
 
 .icons-social {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 .icons-social i {
-  padding: 2px;
+    padding: 2px;
   
 }
 .icons-social a {
-  text-decoration: none;
-  color: rgba(0,0,0,0.5);
-  color: #0C95F5;
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    color: #0C95F5;
 }
 .icons-social a:hover {
-  color: black;
+    color: black;
 }
 
 header .icons-social i {
-  /* margin-top: 20px; */
-  margin-right: 10px;
-  font-size: 40px;
+    /* margin-top: 20px; */
+    margin-right: 10px;
+    font-size: 40px;
 }
 
 
 /* PROJECTS //////////////////////////////////////*/
 
 .project {
-  /* max-width: 480px; */
-  padding: 10px;
-  background-color: rgb(238, 236, 236);
-  margin-bottom: 100px;
+    /* max-width: 480px; */
+    padding: 10px;
+    background-color: rgb(238, 236, 236);
+    margin-bottom: 100px;
 }
 
 .project img {
-  width: 100%;
-  /* border: 2px solid black; */
-  /* opacity: 0.5; */
+    width: 100%;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
+
+    /* border: 2px solid black; */
+    /* opacity: 0.5; */
 }
 
 
 .tech-used {
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.8em;
-  color: rgba(0,0,0,0.3);
-  color: red;
-  margin-top: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.3);
+    color: red;
+    margin-top: 0;
 }
 
 
 .button {
-  display: inline-block;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 900;
-  font-size: 0.9em;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  border: 2px solid black; 
-  padding: 5px 10px;
-  margin: 15px 10px 0 0; 
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black; 
+    padding: 5px 10px;
+    margin: 15px 10px 0 0; 
 }
 
 .button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 
 /* FOOTER //////////////////////////////////////*/
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: black;
-  opacity: 0.9;
-  color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.9;
+    color: #ccc;
 }
 
 footer p {
-  font-size: 0.7em;
-  margin: 0;
-  padding-left: 10px;
+    font-size: 0.7em;
+    margin: 0;
+    padding-left: 10px;
   
 }
 
 footer .icons-social {
-  list-style: none;
-  font-size: 24px;
-  padding: 10px;
-  margin: 0;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
   
 }
 footer .icons-social a {
-  text-decoration: none;
-  color: #ccc;
+    text-decoration: none;
+    color: #ccc;
 }
 footer .icons-social a:hover {
-  color: white;
+    color: white;
 }
 
 
@@ -225,55 +257,97 @@ footer .icons-social a:hover {
 // STANDARD RESPONSIVE DESIGN BREAKPOINTS /////////////////
 /////////////////////////////////////////////////////////*/
 
-/*420////////////////////////////////////////////////////*/
-/* kind of a no-man's land... */
-@media screen and (min-width: 480px) {
-
+/* iPhone portrait /////////////////////////////////////*/
+@media only screen and (min-width: 320px) {
 
 }
 
-/*768////////////////////////////////////////////////////*/
-@media screen and (min-width: 760px) {
+/* iPhone landscape /////////////////////////////////////*/
+@media only screen and (min-width: 480px) {
 
+}
+
+/* Android landscape /////////////////////////////////////*/
+@media only screen and (min-width: 640px) {
+
+}
+
+/* iPad portrait /////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+
+    header {
+        max-width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header .icons-social i {
+        padding: 2px;
+        margin-right: 2px;
+        font-size: 24px;
+    }
+
+    #projects {
+        display:flex;
+        justify-content: space-evenly;
+        flex-flow: wrap;
+    }
+
+    #projects p {
+        font-size: 0.87em; /* 14px */
+    }
+
+    .project {
+        width: 40%;
+        /* border: 1px solid rgba(0,0,0,0.2); */
+        /* padding: 20px; */
+    }
+
+}
+
+/* iPad landscape /////////////////////////////////////*/
+@media screen and (min-width: 1024px) { 
+
+}
   
+
+/* 1280 /////////////////////////////////////*/
+@media screen and (min-width: 1280px) {
+
+}
+
+/* 1600 /////////////////////////////////////*/
+@media only screen and (min-width: 1600px) {
+
+}
+
+
+/* RESPONSIVE DESIGN TEMP BORDER GUIDE ///////////////////////*/
+
+@media only screen and (min-width: 320px) {
+    body { border: 3px solid purple; }
+}
+
+@media only screen and (min-width: 480px) {
+    body { border: 3px solid green; }
+}
+
+@media only screen and (min-width: 640px) {
+    body { border: 3px solid brown; }
+}
+
+@media screen and (min-width: 768px) {
+    body { border: 3px solid red; }
+}
+
+@media screen and (min-width: 1024px) { 
+    body { border: 3px solid blue; }
+}
   
-  header {
-    max-width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  header .icons-social i {
-    padding: 2px;
-    margin-right: 2px;
-    font-size: 24px;
-  }
-
-  #projects {
-    display:flex;
-    justify-content: space-evenly;
-    /* flex-flow: wrap; */
-  }
-
-  #projects p {
-    font-size: 0.87em; /* 14px */
-  }
-
-  .project {
-    width: 40%;
-    /* border: 1px solid rgba(0,0,0,0.2); */
-    /* padding: 20px; */
-  }
-
+@media screen and (min-width: 1280px) {
+    body { border: 3px solid aqua; }
 }
 
-/*1024///////////////////////////////////////////////////*/ /* maybe 980px? */
-@media screen and (min-width: 1024px) {  
-
+@media only screen and (min-width: 1600px) {
+    body { border: 3px solid yellow; }
 }
-
-/*1200///////////////////////////////////////////////////*/
-@media screen and (min-width: 1200px) {
-
-}
-
