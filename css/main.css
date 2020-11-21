@@ -352,7 +352,7 @@ footer .icons-social a:hover {
 
 /* RESPONSIVE DESIGN TEMP BORDER GUIDE ///////////////////////*/
 
-@media only screen and (min-width: 320px) {
+/* @media only screen and (min-width: 320px) {
     body { border: 3px solid purple; }
 }
 
@@ -378,4 +378,4 @@ footer .icons-social a:hover {
 
 @media only screen and (min-width: 1600px) {
     body { border: 3px solid yellow; }
-}
+} */
