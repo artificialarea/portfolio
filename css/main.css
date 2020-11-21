@@ -28,15 +28,14 @@ body {
     padding: 0 8px;
 }
 
-h1, h2, h3,h4, h5, nav {
+h1, h2, h3, h4, h5, nav {
     /* Roboto Slab: 500 Medium, 700 Bold, 900 Black */
     font-family: 'Roboto Slab', serif;
 }
 
 h1 {
     line-height: 1;
-    /* to force text wrap after 'design' */
-    width: 350px;
+    align-self: flex-start;
 }
 
 h2 {
@@ -61,7 +60,7 @@ nav {
     border: 0;
     background-color: black;
     opacity: 0.9;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: 700;
 
     /* at this stage, 
@@ -73,7 +72,7 @@ nav {
 }
 
 nav ul {
-    font-size: 0.8em;
+    font-size: 1.1rem;
     /* display: inline-block; */
     display: flex;
     justify-content: flex-end;
@@ -105,9 +104,16 @@ nav a:hover {
 
 /* HERO/ABOUT //////////////////////////////////////*/
 
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     padding: 2% 2% 8% 2%;
-    max-width: 700px;
+    /* max-width: 700px; */
     /* b/c nav position:absolute (ergo, outside the flow) */
     margin-top: 70px; 
 }
@@ -129,11 +135,26 @@ header {
 
 .header--slogan {
     /* display: inline-block; */
+    margin-bottom: 0;
+
 }
 
 .bio {
     display: inline-block;
-    width: 400px;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 1.5rem;
+    /* width: 400px; */
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.bio--primary p {
+    /* margin-top: 0.4em; */
+}
+
+.bio--secondary {
+    font-size: 1.1rem;
 }
 
 .avatar {
@@ -142,8 +163,12 @@ header {
     margin: auto;
 }
 
-.highlight {
-    color: #0C95F5;
+.highlight p {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
 }
 
 .icons-social {
@@ -156,8 +181,7 @@ header {
 }
 .icons-social a {
     text-decoration: none;
-    color: rgba(0,0,0,0.5);
-    color: #0C95F5;
+    color: rgba(0,0,0,0.4);
 }
 .icons-social a:hover {
     color: black;
@@ -190,7 +214,7 @@ header .icons-social i {
 
 .tech-used {
     font-family: 'Roboto Slab', serif;
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: rgba(0,0,0,0.3);
     color: red;
     margin-top: 0;
@@ -284,7 +308,7 @@ footer .icons-social a:hover {
     header .icons-social i {
         padding: 2px;
         margin-right: 2px;
-        font-size: 24px;
+        font-size: 32px;
     }
 
     #projects {
@@ -294,7 +318,7 @@ footer .icons-social a:hover {
     }
 
     #projects p {
-        font-size: 0.87em; /* 14px */
+        /* font-size: 0.87em; */
     }
 
     .project {
@@ -307,6 +331,10 @@ footer .icons-social a:hover {
 
 /* iPad landscape /////////////////////////////////////*/
 @media screen and (min-width: 1024px) { 
+
+    .bio {
+        width: 800px;
+    }
 
 }
   
