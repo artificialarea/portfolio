@@ -311,13 +311,13 @@ footer .icons-social a:hover {
         font-size: 32px;
     }
 
-    #projects {
+    .projects {
         display:flex;
         justify-content: space-evenly;
         flex-flow: wrap;
     }
 
-    #projects p {
+    .projects p {
         /* font-size: 0.87em; */
     }
 
